@@ -14,3 +14,15 @@ module "ecr" {
 
   environment = var.environment
 }
+
+module "eks" {
+
+  source = "../../modules/eks"
+
+  environment = var.environment
+
+  cluster_name = "dev-brainbox-eks"
+
+  private_subnet_ids = []
+
+}
