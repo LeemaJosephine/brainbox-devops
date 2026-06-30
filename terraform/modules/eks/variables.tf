@@ -9,6 +9,6 @@ variable "cluster_name" {
 }
 
 variable "private_subnet_ids" {
-  description = "Private Subnet IDs"
+  description = "Private subnet IDs"
   type        = list(string)
 }

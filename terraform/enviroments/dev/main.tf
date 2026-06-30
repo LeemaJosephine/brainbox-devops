@@ -23,6 +23,5 @@ module "eks" {
 
   cluster_name = "dev-brainbox-eks"
 
-  private_subnet_ids = []
-
+  private_subnet_ids = module.vpc.private_subnet_ids
 }
